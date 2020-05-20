@@ -1,0 +1,206 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js">
+<link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/texmath.css">
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/goessner/mdmath/master/css/vscode-texmath.css">
+
+</head><body>
+<h1 id="markdowne8afade6b395-2" data-line="0" class="code-line">Markdown语法</h1>
+<h2 id="e4b880e6a087e9a298-2" data-line="1" class="code-line">一、标题</h2>
+<h1 id="helloworld-1-2" data-line="2" class="code-line">HelloWorld 1</h1>
+<blockquote data-line="3" class="code-line">
+<p data-line="3" class="code-line">一个“#”可以把一行变成大标题</p>
+</blockquote>
+<h2 id="helloworld-2-2" data-line="4" class="code-line">HelloWorld 2</h2>
+<blockquote data-line="5" class="code-line">
+<p data-line="5" class="code-line">两个“#”可以把一行变成次级标题，以此类推</p>
+</blockquote>
+<p data-line="7" class="code-line">你好世界！这是我的<strong>第一个</strong>Markdown文档</p>
+<br>
+<h2 id="e4ba8ce993bee68ea5e5928ce59bbee78987-2" data-line="11" class="code-line">二、链接和图片</h2>
+<p data-line="12" class="code-line"><a href="https://www.baidu.com" title="官网主页" data-href="https://www.baidu.com">百度</a></p>
+<blockquote data-line="15" class="code-line">
+<p data-line="15" class="code-line">[百度](<a href="https://www.baidu.com" data-href="https://www.baidu.com">https://www.baidu.com</a> &quot;官网主页&quot;）可以生成超链接</p>
+</blockquote>
+<p data-line="17" class="code-line"><a href="https://www.baidu.com" title="官网主页" data-href="https://www.baidu.com">百度</a></p>
+<p data-line="21" class="code-line"><a href="https://www.baidu.com" title="官网主页" data-href="https://www.baidu.com">百度</a></p>
+<blockquote data-line="23" class="code-line">
+<p data-line="23" class="code-line">参考式链接</p>
+<pre><code data-line="24" class="code-line"><code><div>[Baidu][1]
+
+[1]: https://www.baidu.com  &quot;官网主页&quot;
+
+可以生成参考式链接
+复用格式:[百度][1]
+</div></code></code></pre>
+</blockquote>
+<br>
+<p data-line="35" class="code-line"><img src="https://github.com/orchidblessing/ChinaMobile_BillingSystem/blob/master/bilibili.png" alt="Image" class="loading" id="image-hash-dc6f7a13f036f6b75af6f09d19d685f2faf563c7177fa73f2a8cb8b416eeeaeb"></p>
+<blockquote data-line="37" class="code-line">
+<p data-line="37" class="code-line"><code>![Image](https://github.com/orchidblessing/ChinaMobile_BillingSystem/blob/master/bilibili.png)可以插入网络图片  </code></p>
+</blockquote>
+<p data-line="39" class="code-line"><img src="bilibili.png" alt="Image" class="loading" id="image-hash-52870212232516e47b02a1d8895c52f83444a967c59afed1058dc732620bd792"></p>
+<blockquote data-line="41" class="code-line">
+<p data-line="41" class="code-line"><code>![Image](bilibili.png)</code>把图源放在本地同目录，可以直接导入。
+<br></p>
+</blockquote>
+<p data-line="44" class="code-line">&lt;<a href="http://www.baidu.com" data-href="http://www.baidu.com">www.baidu.com</a>&gt;</p>
+<blockquote data-line="46" class="code-line">
+<p data-line="46" class="code-line">自动链接</p>
+</blockquote>
+<h2 id="e4b889e4bba3e7a081e59d97e58886e589b2e7babfe5928ce79d80e9878de8a1a8e7a4ba-2" data-line="48" class="code-line">三、代码块分割线和着重表示</h2>
+<p data-line="49" class="code-line">&quot;&gt;&quot;</p>
+<blockquote data-line="50" class="code-line">
+<p data-line="50" class="code-line">&quot;&gt;&quot;可以生成代码块</p>
+</blockquote>
+<p data-line="52" class="code-line">Horizontal Rule</p>
+<hr>
+<blockquote data-line="55" class="code-line">
+<p data-line="55" class="code-line">&quot;---&quot;空行三横线分割线</p>
+</blockquote>
+<p data-line="57" class="code-line"><strong>加粗</strong></p>
+<blockquote data-line="59" class="code-line">
+<p data-line="59" class="code-line">四个“*”括住的字加粗</p>
+</blockquote>
+<p data-line="61" class="code-line">这个文档<em>体现了</em> 如下几点:</p>
+<blockquote data-line="63" class="code-line">
+<p data-line="63" class="code-line">两个“*”括住的字斜体</p>
+</blockquote>
+<p data-line="65" class="code-line"><em><strong>混合嵌套斜体加粗</strong></em></p>
+<blockquote data-line="67" class="code-line">
+<p data-line="67" class="code-line">六个 * 或者四个 * 和两个_ ，即**_ _**都可以实现斜体加粗。</p>
+</blockquote>
+<p data-line="69" class="code-line"><code>Inline code</code> with backticks</p>
+<blockquote data-line="70" class="code-line">
+<p data-line="70" class="code-line">&quot;`&quot;两个Tab键上方的点，加亮</p>
+</blockquote>
+<ul>
+<li data-line="72" class="code-line"><code>六个点可以整块加亮文字部分</code><br>
+对齐</li>
+</ul>
+<blockquote data-line="74" class="code-line">
+<p data-line="74" class="code-line">Tab键可以和上标题对齐</p>
+</blockquote>
+<br>
+<h2 id="e59b9be58897e8a1a8-2" data-line="78" class="code-line">四、列表</h2>
+<p data-line="79" class="code-line">无序列表：</p>
+<ul>
+<li data-line="80" class="code-line">做一些事</li>
+<li data-line="81" class="code-line">做另一些事
+<ul>
+<li data-line="82" class="code-line">第一步</li>
+<li data-line="83" class="code-line">第二步</li>
+<li data-line="84" class="code-line">第三步
+<ul>
+<li data-line="85" class="code-line">第一步</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="86" class="code-line">结束</li>
+</ul>
+<blockquote data-line="87" class="code-line">
+<p data-line="87" class="code-line">用*和+等生成无序列表，符号后要加空格</p>
+</blockquote>
+<p data-line="89" class="code-line">有序列表：</p>
+<ol>
+<li data-line="90" class="code-line">第一步</li>
+<li data-line="91" class="code-line">第二步</li>
+<li data-line="92" class="code-line">第三步</li>
+</ol>
+<blockquote data-line="94" class="code-line">
+<p data-line="94" class="code-line">数字加点和空格，生成有序列表。四个空格或一个Tab，文字将原样输出</p>
+</blockquote>
+<p data-line="96" class="code-line"><s>这段不要了</s><br>
+<s><strong><em>这段不要了</em></strong></s></p>
+<blockquote data-line="98" class="code-line">
+<p data-line="98" class="code-line">双波浪线是删除线~~ ~~
+可以和粗体斜体叠加</p>
+</blockquote>
+<br>
+<h2 id="e4ba94e8bdace4b989e5ad97e7aca6-2" data-line="103" class="code-line">五、转义字符</h2>
+<ul>
+<li data-line="104" class="code-line">\\</li>
+<li data-line="105" class="code-line">\#</li>
+<li data-line="106" class="code-line">\*<br>
+显示为:</li>
+<li data-line="108" class="code-line">\</li>
+<li data-line="109" class="code-line">#</li>
+<li data-line="110" class="code-line">*</li>
+</ul>
+<h2 id="e585ade5bc95e794a8e59d97-2" data-line="112" class="code-line">六、引用块</h2>
+<blockquote data-line="113" class="code-line">
+<p data-line="113" class="code-line">此为引用块</p>
+</blockquote>
+<p data-line="115" class="code-line">在文字前加“&gt; ”即可</p>
+<blockquote data-line="117" class="code-line">
+<pre data-line="117" class="code-line"><code>代码块
+</code></pre>
+</blockquote>
+<p data-line="119" class="code-line">五个空格在引用框中生成黑色代码块</p>
+<blockquote data-line="121" class="code-line">
+<p data-line="121" class="code-line">引用中嵌套引用</p>
+<blockquote data-line="122" class="code-line">
+<p data-line="122" class="code-line">二级引用</p>
+</blockquote>
+</blockquote>
+<h2 id="e4b883e4bba3e7a081e6aeb5e890bd-2" data-line="124" class="code-line">七、代码段落</h2>
+<pre><code data-line="126" class="code-line"><code><div>public class HelloWorld{
+    public static void main(String[] args){
+        System.out.println(&quot;Hello world!&quot;);
+    }
+}
+</div></code></code></pre>
+<blockquote data-line="134" class="code-line">
+<p data-line="134" class="code-line">采用```代码```的方式原样输出代码。</p>
+</blockquote>
+<h2 id="e585abe8a1a8e6a0bc-2" data-line="136" class="code-line">八、表格</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Left-aligned</th>
+<th style="text-align:center">Center-aligned</th>
+<th style="text-align:right">Right-aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">git status</td>
+<td style="text-align:center">git status</td>
+<td style="text-align:right">git status</td>
+</tr>
+<tr>
+<td style="text-align:left">git diff</td>
+<td style="text-align:center">git diff</td>
+<td style="text-align:right">git diff</td>
+</tr>
+</tbody>
+</table>
+<blockquote data-line="142" class="code-line">
+<pre><code data-line="142" class="code-line"><code><div>       |Left-aligned|Center-aligned|Right-aligned|
+       |:---        |     :---:    |     ---:    |
+       |git status  |git status    |git status   |
+       |git diff    |git diff      |git diff     |
+</div></code></code></pre>
+</blockquote>
+<h2 id="e4b99de585ace5bc8f-2" data-line="149" class="code-line">九、公式</h2>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><mn>2</mn><mi>θ</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mo><mi>cos</mi><mo>⁡</mo></mo><mrow><munder><mo><mi>lim</mi><mo>⁡</mo></mo><mrow><mi>x</mi><mo>→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mi>exp</mi><mo>⁡</mo><mo stretchy="false">(</mo><mo>−</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></msup><mi>θ</mi><mo>−</mo><msup><mo><mi>sin</mi><mo>⁡</mo></mo><mn>2</mn></msup><mi>θ</mi><mo>+</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msubsup><mi>ϕ</mi><mi>i</mi><msup><mn>2</mn><msub><mi>z</mi><mn>1</mn></msub></msup></msubsup></mrow><annotation encoding="application/x-tex">\cos(2\theta)=\cos^{\lim_{x\to\infty}\exp(-x)}\theta-\sin^2\theta+\sum^n_{i=1}\phi^{2^{z_1}}_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">cos</span><span class="mopen">(</span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.0213299999999998em;vertical-align:-0.08333em;"></span><span class="mop"><span class="mop">cos</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.938em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mop mtight">lim</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.16454285714285719em;"><span style="top:-2.357em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">x</span><span class="mrel mtight">→</span><span class="mord mtight">∞</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.19516666666666668em;"></span><span class="mop mtight">exp</span><span class="mopen mtight">(</span><span class="mord mtight">−</span><span class="mord mathdefault mtight">x</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.955198em;vertical-align:-0.08333em;"></span><span class="mop"><span class="mop">sin</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.871868em;"><span style="top:-3.12076em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.929066em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6513970000000002em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.3000050000000005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">ϕ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9299799999999999em;"><span style="top:-2.4530000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3447999999999998em;margin-left:-0.04398em;margin-right:0.1em;"><span class="pstrut" style="height:2.64444em;"></span><span class="mord mtight">1</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29964em;"><span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.247em;"><span></span></span></span></span></span></span></span></span></span></span></eqn></section><section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo fence="true">[</mo><mtable rowspacing="0.15999999999999992em" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>1</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>2</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>3</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>4</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>5</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>6</mn></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>7</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>8</mn></mstyle></mtd><mtd><mstyle scriptlevel="0" displaystyle="false"><mn>9</mn></mstyle></mtd></mtr></mtable><mo fence="true">]</mo></mrow><annotation encoding="application/x-tex">\begin{bmatrix}1&amp;2&amp;3\\4&amp;5&amp;6\\7&amp;8&amp;9\end{bmatrix}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:3.60004em;vertical-align:-1.55002em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎣</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎡</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mtable"><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">4</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">7</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">5</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">8</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span><span class="arraycolsep" style="width:0.5em;"></span><span class="arraycolsep" style="width:0.5em;"></span><span class="col-align-c"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05em;"><span style="top:-4.21em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">3</span></span></span><span style="top:-3.0099999999999993em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">6</span></span></span><span style="top:-1.8099999999999994em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">9</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.5500000000000007em;"><span></span></span></span></span></span></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:2.05002em;"><span style="top:-2.2500000000000004em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎦</span></span></span><span style="top:-4.05002em;"><span class="pstrut" style="height:3.1550000000000002em;"></span><span class="delimsizinginner delim-size4"><span>⎤</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.55002em;"><span></span></span></span></span></span></span></span></span></span></span></span></eqn></section><blockquote data-line="153" class="code-line">
+<p data-line="153" class="code-line">导出方式ctrl+p &gt;clip</p>
+</blockquote>
+<br>
+<h2 id="e58d81e68f92e4bbb6-2" data-line="157" class="code-line">十、插件：</h2>
+<ol>
+<li data-line="159" class="code-line">Name: Auto-Open Markdown Preview
+Id: hnw.</li>
+<li data-line="161" class="code-line">Name: Markdown Checkbox
+Publisher: Philipp Kief</li>
+<li data-line="163" class="code-line">Name: Markdown Shortcuts
+Id: mdickin.</li>
+<li data-line="165" class="code-line">Name: Markdown+Math
+Id: goessner.mdmath</li>
+<li data-line="167" class="code-line">Name: Paste Image
+Id: mushan.</li>
+</ol>
+
+</body></html>
